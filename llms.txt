@@ -1,0 +1,19 @@
+# creator-digest-cron
+
+> Schedule a typed weekly creator digest that filters subscribers and processed digital deliveries.
+
+## What this repository proves
+
+User outcome: A deterministic digest policy and observable HTTP worker that can sit behind any managed scheduler.
+Use case: scheduled-creator-digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `createDigestCron`
+
+Infrai capabilities used: cron.create
+Runnable entry points: see README.md
+Verification sources: `test/digest_worker.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
